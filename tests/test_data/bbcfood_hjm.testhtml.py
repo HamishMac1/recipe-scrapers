@@ -15,3 +15,15 @@ scraper.yields()
 scraper.to_json()
 scraper.links()
 scraper.nutrients()  # if available
+
+print(scraper.host())
+print(scraper.title())
+print(scraper.total_time())
+print(scraper.image())
+print(scraper.ingredients())
+print(scraper.instructions())
+print(scraper.instructions_list())
+print(scraper.yields())
+print(scraper.to_json())
+print(scraper.links())
+print(scraper.nutrients())  # if available
