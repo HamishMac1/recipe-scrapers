@@ -162,8 +162,8 @@ def url_path_to_dict(path):
     )
     regex = re.compile(pattern)
     matches = regex.match(path)
-    url_dict = matches.groupdict() if matches is not None else None
-
+    url_dict = matches.groupdict() if matches is not None else None #matches.groupdict() Return a dictionary containing all the named subgroups of the match, keyed by the subgroup name
+    
     return url_dict
 
 

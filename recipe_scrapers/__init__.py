@@ -495,7 +495,7 @@ def scrape_me(url_path: str, **options: Any) -> AbstractScraper:
     host_name = get_host_name(url_path)
 
     try:
-        scraper = SCRAPERS[host_name]
+        scraper = SCRAPERS[host_name] #SCRAPERS is the dictionary of hosts. it assigns a class eg BBCFood so we use the correct scraper
     except KeyError:
         if not options.get("wild_mode", False):
             raise WebsiteNotImplementedError(host_name)
